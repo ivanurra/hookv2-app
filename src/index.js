@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HookApp } from "./HookApp";
+import { Countdown } from "./components/useState/Countdown";
 
-ReactDOM.render(<HookApp />, document.getElementById("root"));
+ReactDOM.render(<Countdown />, document.getElementById("root"));
