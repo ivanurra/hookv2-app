@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Countdown } from "./components/useState/Countdown";
+// import { Countdown } from "./components/useState/Countdown";
+import { CustomHook } from "./components/useState/CustomHook";
 
-ReactDOM.render(<Countdown />, document.getElementById("root"));
+ReactDOM.render(<CustomHook />, document.getElementById("root"));
