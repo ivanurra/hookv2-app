@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { SimpleForm } from "./components/useEffect/SimpleForm";
 // import { Countdown } from "./components/useState/Countdown";
-import { CustomHook } from "./components/useState/CustomHook";
+// import { CustomHook } from "./components/useState/CustomHook";
 
-ReactDOM.render(<CustomHook />, document.getElementById("root"));
+ReactDOM.render(<SimpleForm />, document.getElementById("root"));
