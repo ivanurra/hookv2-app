@@ -9,16 +9,29 @@ export const SimpleForm = () => {
 
   const { name, email } = formState;
 
-  // useEffect(() => {
-  //   console.log("hey");
-  // });
+  useEffect(() => {
+    console.log("hey");
+  });
+
+  const handleInputChange = (e) => {
+    console.log(e.target.name);
+    console.log(e.target.value);
+  };
 
   return (
     <>
       <h1>Form:</h1>
       <hr />
       <div className="form-group">
-        <input type="text" name="name" />
+        <input
+          type="text"
+          name="name"
+          className="form-control"
+          placeholder="Your name"
+          autoComplete="off"
+          value={name}
+          onChange={handleInputChange}
+        />
       </div>
     </>
   );
