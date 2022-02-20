@@ -1,17 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export const Message = () => {
+  const [coors, setCoors] = useState({
+    x: 0,
+    y: 0,
+  });
+
+  const { x, y } = coors;
   useEffect(() => {
-    console.log("component mounted!");
+    const mouseMove = (e) => {
+      const coors = { x: e.x, y: e.y };
+      setCoors(coors);
+    };
+
+    window.addEventListener("mousemove", mouseMove);
 
     return () => {
-      console.log("component unmounted!");
+      window.removeEventListener("mousemove", mouseMove);
     };
   }, []);
 
   return (
     <div>
-      <h3>Lorem ipsum.</h3>
+      <h3>Password checked.</h3>
+      <h3>x: {x}</h3>
+      <h3>y: {y}</h3>
     </div>
   );
 };
