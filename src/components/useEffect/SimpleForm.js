@@ -11,11 +11,13 @@ export const SimpleForm = () => {
 
   useEffect(() => {
     console.log("hey");
-  });
+  },[]);
 
-  const handleInputChange = (e) => {
-    console.log(e.target.name);
-    console.log(e.target.value);
+  const handleInputChange = ({ target }) => {
+    setFormState({
+      ...formState,
+      [target.name]: target.value,
+    });
   };
 
   return (
@@ -30,6 +32,18 @@ export const SimpleForm = () => {
           placeholder="Your name"
           autoComplete="off"
           value={name}
+          onChange={handleInputChange}
+        />
+      </div>
+
+      <div className="form-group">
+        <input
+          type="text"
+          name="email"
+          className="form-control"
+          placeholder="Your email"
+          autoComplete="off"
+          value={email}
           onChange={handleInputChange}
         />
       </div>
