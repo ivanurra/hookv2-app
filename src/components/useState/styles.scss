@@ -1,8 +1,29 @@
 body {
+  align-items: center;
+  text-align: center;
   padding: 50px;
   background-color: rgb(191, 191, 191);
 }
 
 .btn-score {
   margin-top: 80px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  width: 30%;
+}
+
+.btn {
+  width: 30%;
+}
+
+@media (max-width: 800px) {
+  .form-control {
+    width: 80%;
+  }
 }
