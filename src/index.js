@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Form } from "./components/useState/Form";
+import { MultipleHooks } from "./components/Examples/MultipleHooks";
 
-ReactDOM.render(<Form />, document.getElementById("root"));
+ReactDOM.render(<MultipleHooks />, document.getElementById("root"));
