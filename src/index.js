@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { MultipleHooks } from "./components/Examples/MultipleHooks";
+import { FocusScreen } from "./components/useRef/FocusScreen";
 
-ReactDOM.render(<MultipleHooks />, document.getElementById("root"));
+ReactDOM.render(<FocusScreen />, document.getElementById("root"));
