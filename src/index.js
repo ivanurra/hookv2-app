@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { FocusScreen } from "./components/useRef/FocusScreen";
+import { ExamplelRef } from "./components/useRef/ExamplelRef";
 
-ReactDOM.render(<FocusScreen />, document.getElementById("root"));
+ReactDOM.render(<ExamplelRef />, document.getElementById("root"));
